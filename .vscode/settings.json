@@ -1,0 +1,14 @@
+/*
+この記事のおかげでyarn4 + VSCodeでts2307が一生出続ける問題の解消
+https://qiita.com/Enokisan/items/8007c6a943058bcf7073
+*/
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
